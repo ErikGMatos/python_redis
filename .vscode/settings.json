@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    "**/*.pyc": { "when": "$(basename).py"},
+    "**/__pycache__": true,
+    "**/*.pytest_cache": true
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+  },
+  "python.analysis.indexing": true,
+  "python.analysis.autoImportCompletions": true,
+}
