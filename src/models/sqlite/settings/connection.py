@@ -14,3 +14,6 @@ class SqliteConnectionHandler:
 
     def get_connection(self) -> SqliteConnection:
         return self.__conn
+
+
+sqlitedb_connection_handler = SqliteConnectionHandler()
