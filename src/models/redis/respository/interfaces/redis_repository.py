@@ -20,7 +20,7 @@ class RedisRepositoryInterface(ABC):
         pass
 
     @abstractmethod
-    def inser_ex(self, key: str, value: any, ex: int) -> None:
+    def insert_ex(self, key: str, value: any, ex: int) -> None:
         pass
 
     @abstractmethod
