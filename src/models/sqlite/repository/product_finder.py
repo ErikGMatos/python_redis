@@ -1,3 +1,5 @@
+from src.http_types.http_request import HttpRequest
+from src.http_types.http_response import HttpResponse
 from src.models.redis.respository.interfaces.redis_repository import (
     RedisRepositoryInterface,
 )
@@ -14,3 +16,6 @@ class ProductFinder:
     ) -> None:
         self.redis_repo = redis_repo
         self.products_repo = products_repo
+
+    def find_by_name(self, http_request: HttpRequest) -> HttpResponse:
+        pass
