@@ -26,7 +26,6 @@ class ProductFinder:
             product = self.__find_in_sql(product_name)
             if product:
                 self.__insert_in_cache(product)
-
         return self.__format_response(product)
 
     def __find_in_cache(self, product_name: tuple) -> None:
